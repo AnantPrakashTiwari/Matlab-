@@ -1,0 +1,15 @@
+clc
+close all
+clear all
+d1=input('enter bandpass magnitude ')
+d2=input('enter bandstop magnitude')
+ohm1=input('enter bandpass frequency')
+ohm2=input('enter bandstop frequency')
+a=((1/(d2)^2)-1)
+b=((1/(d1)^2)-1)
+c=a/b
+d=log(c)
+e = ohm2/ohm1
+f=log(e)
+N=(d/f)/2
+N=ceil(N)
